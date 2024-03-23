@@ -38,12 +38,16 @@ dependencies:
   google_fonts: ^6.2.1
   weather_icons: ^3.0.0
   flutter_toggle_tab: ^1.4.1
-  geolocator: ^11.0.0
-  flutter_background_service: ^5.0.5
+  geolocator: ^10.1.0
   geocoding: ^3.0.0
   flutter_local_notifications: ^17.0.0
   shared_preferences: ^2.2.2
   fluttertoast: ^8.2.4
+  open_street_map_search_and_pick: ^0.1.1
+  move_to_background: ^1.0.2
+  flutter_foreground_service: ^0.4.1
+
+
   http: ^1.2.1
 
 dev_dependencies:

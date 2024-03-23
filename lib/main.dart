@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_foreground_service/flutter_foreground_service.dart';
+
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:mask_aqi/Screens/Aqi.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -10,6 +13,10 @@ void main() async {
     prefs.setBool("Notification_Allowed", true);
   }
 
+  LocationPermission permission;
+  permission = await Geolocator.requestPermission();
+
+  ForegroundService().start();
   runApp(MyApp(prefs: prefs));
 }
 
